@@ -1,0 +1,441 @@
+body{
+	background-image:"images/back8.jpg";
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+
+}
+/*containers*/
+
+#about{
+color:black;
+text-align: center;
+}
+#wrapper		{
+				
+				width:900px;
+				height:100%;
+				border:solid 1px #eee;
+				border-radius:10px;
+				box-shadow:0px 3px 5px 5px white;
+				 color:white;
+				 margin:0px auto;
+				 
+				}
+
+
+#topnav			{ 
+	 				background-color:#77BFC7;
+				  width:80%;
+				  	height:110px;
+				  padding:20px 0;
+				  overflow:hidden;
+				  border-radius:10px;
+				  border-bottom:1px #eeeeee solid;
+				margin-right:0px;
+				  	}
+#topnav ul li  img{
+	width:120px;
+	height:50px;
+}
+
+H2{
+	font-family:Comic Sans, Comic Sans MS, cursive;
+	font-size:36px;
+	font-weight:bold,italic;
+	font-style:italic;
+	color:#FFD700;
+	
+}
+#logo{
+	border:1px solid black;
+	border-radius:10px;
+	position:fixed;
+	
+	
+}
+
+
+/*for main logo*/
+
+#logo  	img		{
+				
+				vertical-align: right;
+ 				margin-left:700px;
+ 				float: right;
+ 				border-radius:10px;
+				}
+ #logo :hover	img	{
+ 	-moz-transform:scale(2);
+ }
+
+/*social media icon*/
+#Social-Media	{ padding:20px 0px 0px 0px;
+				  float:right;
+				  margin: 0 10px 0 0;	
+				  background-color: white;
+				  width:400px;
+				  margin-left:60px;
+				  border-radius:10px;
+			
+				  }
+
+/*target any paragraph in social media division*/
+#Social-Media p	{ color:#ffffff;
+				  font-size:11px;
+				  margin:4px 10px 4px 0px;
+				  background-color: black;
+				 
+				  	}
+				  	
+#Social-Media img { width:40px ; height:40px;
+border:1px solid white;
+border-radius:50%;}
+#Social-Media ul li { display:inline;	}
+
+#topnav			{background-color:#333333;
+				 height: 60px; 
+				 clear:both;
+				 border-radius:10px;
+				 padding:30px;
+				 width:842px;
+				 position:fixed;
+				 opacity:0.6;
+
+				 	}
+/*CONVERTS VERTICAL NAV BAR TO HORONTAL BAR*/
+#topnav ul li   { display:inline;
+				}
+#topnav ul		{width:100%; 
+    			 float:right;
+				margin:0px;
+				/*background-color:#333333;*/
+/*border-bottom:3px #cccccc solid;*/
+}
+
+#topnav ul li a {float:left	;padding:20px 10px;	}		
+#topnav a:link  { color:#ffffff;}
+#topnav a:visited  { color:#ffffff;}
+#topnav a:active  { color:#ffffff;}
+#topnav a:hover  { color:#ffffff ;background-color:red;}
+#topnav a:focus  { color:#ffffff;}
+#topnav img{
+	margin-left:700px;
+	margin-bottom:0px;
+	padding-bottom:20px;
+	width:100px;
+	height:60px;
+	border :1px solid black;
+	border-radius:10px;
+	
+}				
+
+#banner{}
+
+#banner img			{ border:2px 2px 2px 2px;	}
+
+
+#subbanner		{background-color:#cccccc;	}
+
+img{
+	top-margin:0px;
+}
+
+#content		{
+	background-image:"images/back3.jpg";
+	box-shadow:0px 3px 5px 5px white;
+				float:left;width:96%;
+				height:570px;
+				padding:20px 20px 0px 20px;
+				background-color: #ffffff;
+				height:2240px;
+				border:1px solid white;
+				border-radius:10px;
+				}
+
+.list{
+	color:black;
+}
+
+#imgs img 
+{
+    /*overlays all the imgs */
+    /*You see only the first img, for now*/
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: 1s;
+    visibility:hidden;
+    /*we want to show only 1 img at the time*/
+}
+/*the container */
+#Snav 
+{
+    display:block;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+/* where the circles are going to be*/
+#SnavUp 
+{
+    display:block;
+    width:100%;
+    height:20%;
+}
+#Scircles 
+{
+    display:block;
+    width:5%;
+    height:15%;
+    margin-right:5%;
+    margin-top:2%;
+    float:right;        /* is going to be on the right side of the slider*/
+}
+#Scircles ul 
+{
+    margin:0;
+    float:right;
+    display:block;
+    width:100%;
+    height:100%;
+}
+#Scircles li
+{
+    /*we don't need the dots*/
+    list-style:none;
+    display:block;
+    background-color:rgba(0, 0, 0, 1);
+    width:25%;
+    height:90%;
+    margin-left:5%;
+    float:left;     /*on the same line*/
+    visibility:hidden;
+    /*we need circles, not squares*/
+    border-bottom-left-radius:25px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-right-radius:25px;
+
+}
+/*ok , we are done with the SnavUp*/
+#SnavMiddle 
+{
+    display:block;
+    width:100%;
+    height:15%;
+    margin-top:10%;     /*this is up to you , where you want the buttons*/
+}
+/*left button*/
+#Sleft 
+{
+    width:8%;
+    height:100%;
+    float:left;
+    margin-left:3%;
+    opacity:0.8;
+}
+/*button effect*/
+#Sleft:hover 
+{
+    opacity:0.8;
+}
+#Sright 
+{
+    width:8%;
+    height:100%;
+    float:right;
+    margin-right:3%;
+    opacity:0.8;
+}
+#Sright:hover 
+{
+    opacity:0.8;
+}
+/*now we have to add the info at the bottom of the slider*/
+#SnavBottom 
+{
+    display:block;
+    background-color:rgba(0, 0, 0, 0.8);
+    width:100%;
+    height:10%;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+#SnavBottom p 
+{
+    font:normal 200% Arial;
+    color:#fff;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-left:3%;
+    visibility:hidden;
+}
+/*that's all , now we need to code the slider, the effect*/
+
+
+#team			{
+				float:left;width:600px;
+				height:600px;
+				padding:20px 20px 0px 0px;	}
+
+
+
+h3				{color:maroon;
+				}
+				
+#footer			{
+				float:left;
+				padding: 20px 0px;
+				background-color:black;
+				opacity:0.5;
+				font-style:italic;
+				width:100%;
+				border:1px solid black;
+				border-radius:10px;
+				}
+
+#box1  {	}
+
+#box2  {	}
+
+#box3  {	}
+
+#box4  {	}
+
+#box5  {	}
+
+#box6  {	}
+
+/*layout Extra*/
+
+
+
+/*Navigation Extra*/
+
+.unfade:hover{
+	opacity:100%;
+}
+.pic{
+border:1px solid black;
+border-radius:20px;
+
+}
+.pic:hover{
+	opacity:0.5;
+}
+.picsmall{
+	position:absolute;
+	width:0px;
+	-webkit-transition:width 0.3s linear 0s;
+	transition:width 0.3s linear 0s;
+	z-index:100;
+}
+.pic:hover + .picsmall{
+	width:250px;
+	height:200px;
+	vertical-align: center;
+}
+.picbig{
+	position:absolute;
+	width:0px;
+	-webkit-transition:width 0.3s linear 0s;
+	transition:width 0.3s linear 0s;
+	z-index:100;
+}
+.pic:hover + .picbig{
+	width:600px;
+	height:500px;
+	vertical-align: center;
+}
+
+/*.pic:hover{
+	cursor:pointer;
+	width:600px;
+	height:300px;
+	position:absolute;
+}
+*/
+/*Fotrms */
+
+form  { text-align:left; margin:20px;  }
+
+label,submit,imput,texarea{
+		border:0;padding:0;margin:0;background:none;
+		}
+		
+label{
+float:left;width:150px;
+text-align:right;display:block;
+}
+
+input,textarea{
+	border:1px #333 solid;margin-left:10px;
+	}
+
+input{
+	}
+	
+	textarea{
+	width:280px;height: 150px;
+	margin-bottom:16px;
+	}
+	
+select {	}
+
+.submit{
+		width:90px;height:25px;
+		margin-left:150px;
+		font-size:12px;
+		
+	}
+	
+br  { clear : left; }
+			
+#bottom_form{
+	color:black;
+}
+
+
+fieldset{
+	text-align: left;
+	display:block;
+	padding-left:10px;
+	padding-right:10px;
+	border:5px solid  black ;
+	border-radius:10px;
+	color:black;
+	
+}
+legend{
+	text-align: left;
+}
+#mar{
+
+background:maroon;
+color:white;
+width:40%;
+vertical-align: center;
+}
+#pur{
+	
+background:purple;
+color:white;
+width:40%;
+vertical-align:center;
+}
+
+#bottom{
+	align-text:center;
+	padding:5px;
+	color:white;
+	width:600px;
+	text-align:center;
+	height:30px;
+}
+			
